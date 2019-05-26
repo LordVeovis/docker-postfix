@@ -1,0 +1,39 @@
+version: "3.5"
+
+services:
+  postfix:
+    build: .
+    depends_on:
+      - mysql
+    environment:
+      TZ: Europe/Paris
+    ports:
+      - "25:25"
+      - 587:587
+      - 2500:2500
+    volumes:
+      - conf:/etc/postfix
+      - log:/var/log
+
+  mysql:
+    image: mariadb:10
+    restart: unless-stopped
+    networks:
+      - internal
+    ports:
+      - 3307:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+    secrets:
+      - mysql_root
+    environment:
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/mysql_root
+
+secrets:
+  mysql_root:
+    file: ./pwd_mysql_root.txt
+
+volumes:
+  conf:
+  log:
+  mysql-data:
