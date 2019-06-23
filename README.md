@@ -6,10 +6,10 @@ An alpine-based docker container providing postfix.
 
 ## Details
 
-This container provides clamav.
+This container provides postfix.
 
-* Alpine 3.9
-* Postfix 3.3.2
+* Alpine 3.10
+* Postfix 3.4.5
 
 ## Installing
 
