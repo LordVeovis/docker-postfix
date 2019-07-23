@@ -17,7 +17,8 @@ fi
 
 echo Starting syslogd
 #syslogd -ZO /proc/1/fd/1
-SYSLOGD_OPTS="-Z" syslogd -Z
+#SYSLOGD_OPTS="-Z" syslogd -Z
+syslogd
 
 echo Starting postfix
 exec "$@"
