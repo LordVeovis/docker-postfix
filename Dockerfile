@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.13
 
 EXPOSE 25/tcp
 EXPOSE 465/tcp
@@ -10,7 +10,6 @@ RUN set -xe; \
                 postfix-mysql \
                 policyd-spf-fs \
                 cyrus-sasl \
-                cyrus-sasl-plain \
                 cyrus-sasl-login \
                 cyrus-sasl-crammd5 \
                 cyrus-sasl-digestmd5 \
