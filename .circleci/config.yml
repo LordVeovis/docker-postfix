@@ -45,12 +45,17 @@ workflows:
       - build:
           filters:
             branches:
-              only: docker
+              only: master
             tags:
               only: /^\d+\.\d+\.\d+$/
       - publish-latest:
+          context:
+            - kveer-dockerhub
           requires:
             - build
           filters:
             branches:
-              only: docker
+              only: master
+            tags:
+              only: /^\d+\.\d+\.\d+$/
+
