@@ -1,4 +1,4 @@
-[![](https://img.shields.io/docker/cloud/build/veovis/postfix.svg)](https://hub.docker.com/r/veovis/postfix/builds) [![](https://img.shields.io/docker/pulls/veovis/postfix.svg)](https://hub.docker.com/r/veovis/postfix) ![](https://img.shields.io/microbadger/image-size/veovis%2Fpostfix.svg) [![](https://img.shields.io/github/tag/LordVeovis/docker-postfix.svg)](https://github.com/LordVeovis/docker-postfix/tags) [![](https://img.shields.io/github/license/LordVeovis/docker-postfix.svg)](https://github.com/LordVeovis/docker-postfix/blob/master/LICENSE)
+[![CircleCI](https://circleci.com/gh/LordVeovis/docker-postfix/tree/docker.svg?style=shield)](https://circleci.com/gh/LordVeovis/docker-postfix/tree/master) ![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/badges/shields) [![](https://img.shields.io/docker/pulls/veovis/postfix.svg)](https://hub.docker.com/r/veovis/postfix) ![](https://img.shields.io/microbadger/image-size/veovis%2Fpostfix.svg) [![](https://img.shields.io/github/tag/LordVeovis/docker-postfix.svg)](https://github.com/LordVeovis/docker-postfix/tags) [![](https://img.shields.io/github/license/LordVeovis/docker-postfix.svg)](https://github.com/LordVeovis/docker-postfix/blob/master/LICENSE)
 
 # postfix
 
@@ -8,8 +8,8 @@ An alpine-based docker container providing postfix.
 
 This container provides postfix.
 
-* Alpine 3.13
-* Postfix 3.5.10
+* Alpine 3.14
+* Postfix 3.6.1
 
 ## Installing
 
