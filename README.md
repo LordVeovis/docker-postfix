@@ -8,8 +8,8 @@ An alpine-based docker container providing postfix.
 
 This container provides postfix.
 
-* Alpine 3.14
-* Postfix 3.6.1
+* Alpine 3.15
+* Postfix 3.6.4
 
 ## Installing
 

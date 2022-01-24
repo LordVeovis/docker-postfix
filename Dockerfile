@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.15
 
 EXPOSE 25/tcp
 EXPOSE 465/tcp
@@ -15,8 +15,6 @@ RUN set -xe; \
                 cyrus-sasl-digestmd5 \
                 cyrus-sasl-scram; \
         chown root:root /var/spool/postfix /var/spool/postfix/pid
-# only for postfix@ alpine 3.8
-#       sed -i 's!\($daemon_directory/master\)$!exec \1!' /usr/lib/postfix/postfix-script
 
 VOLUME /etc/postfix
 VOLUME /var/spool/postfix
